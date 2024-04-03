@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  #quiz-container {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .question-container {
+    font-weight: 900;
+    font-size: large;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  h1 {
+    text-align: left;
+    font-size: 24px;
+    color: white;
+    background: black;
+    padding: 20px;
+  }
+  
+  form.answers {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    margin: 20px;
+    gap: 10px;
+  }
+  
+  label {
+    cursor: pointer;
+  }
+  
+  input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    height: 0;
+    width: 0;
+    clip: rect(0, 0, 0, 0);
+  }
+  
+  :checked + span {
+    background-color: lightgreen;
+  }
+
+
+  #options-container {
+    margin-top: 20px;
+    overflow: hidden;
+    max-height: 300px;
+    transition: all .5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .option {
+    font-size: large;
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    margin-bottom: 5px;
+    cursor: pointer;
+  }
+  
+  #next-btn {
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: 700;
+    border: none;
+    color: whitesmoke;
+    background-color: blue;
+    margin-top: 10px;
+  }
+
+  #score-container {
+    float: right;
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
+    color: darkblue;
+  }
+
+  #restart-btn, #back-to-menu-btn {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: 600;
+    border: none;
+    background-color: yellowgreen;
+    /* color: white; */
+    text-decoration: none;
+    margin: 10px;
+    cursor: pointer;
+  }
